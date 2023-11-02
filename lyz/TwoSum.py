@@ -34,6 +34,15 @@ class Solution:
                 return [num_to_index[complement], i]
             num_to_index[num] = i
 
+# ! 使用index方法的解法
+def twoSum(nums, target):
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in nums:
+            j = nums.index(complement)
+            if i != j:
+                return [i, j]
+
 
 # ! 使用双指针的写法
 class Solution:
