@@ -49,5 +49,7 @@ class Solution:
         
 a = Solution()
 print(a.findMedianSortedArrays([1,3],[2]))
-                
 print(a.findMedianSortedArrays([1,2],[3,4]))
+
+
+# ! 二叉树
