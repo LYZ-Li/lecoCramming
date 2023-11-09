@@ -106,3 +106,6 @@ class Solution:
         num = max(num, -2**31)
         num = min(num, 2**31 - 1)
         return num
+    
+    # 看完这个我又想到一个前后双指针的思路，前指针负责找符号和数字，后指针把数字复制过来! 不行，str不能这么改，需要额外的list或者str
+    # 最后输出一个空 ''.join
