@@ -3,7 +3,7 @@
 #
 # [2] Add Two Numbers
 #
-# ? python3的链表是怎么回事
+# ? python3的链表是怎么回事 solved 15.Nov. 2023
 # @lc code=start
 # Definition for singly-linked list.
 # class ListNode:

@@ -17,6 +17,7 @@ class Solution:
             valToIndex[nums[i]] = i
         return []
 ''' 
+
 # ! chatGPT给出的写法
 # 使用了迭代器 enumerate(object, [start]), i 和 num分别是索引和值
 # 这种方法是内置的，风格更简单，更pythonic，运算也更快速
@@ -79,3 +80,13 @@ class Solution:
 不需要额外的空间：直接使用索引的解法不需要额外的空间来存储哈希表，因此空间复杂度较低。
 可能更容易理解：在一些情况下，直接使用索引的解法可能更容易理解，特别是对于初学者来说。\
 '''
+
+
+
+from typing import List #这句是为了让定义函数的数据类型定义的标注能起作用
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[j] == target - nums[i]:
+                    return [i, j]
