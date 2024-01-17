@@ -9,3 +9,5 @@
 
 
 git 教程 https://segmentfault.com/a/1190000003728094 
+
+同时设置github和gitlab https://www.cnblogs.com/lfr0123/p/13477001.html
