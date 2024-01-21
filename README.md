@@ -10,4 +10,8 @@
 
 git 教程 https://segmentfault.com/a/1190000003728094 
 
-同时设置github和gitlab https://www.cnblogs.com/lfr0123/p/13477001.html
+同时设置github和gitlab  
+https://www.cnblogs.com/lfr0123/p/13477001.html
+
+将一个已存在的目录转换为一个 GIT 项目并托管到 GITHUB 仓库  
+https://blog.csdn.net/solo_ws/article/details/77095901
