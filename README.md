@@ -16,7 +16,7 @@ https://www.cnblogs.com/lfr0123/p/13477001.html
 将一个已存在的目录转换为一个 GIT 项目并托管到 GITHUB 仓库  
 https://blog.csdn.net/solo_ws/article/details/77095901
 
-使用yml升级环境
-conda update conda
-conda activate xxx
-conda env update --file env-ids-ws23.yml --prune
+使用yml升级环境  
+`conda update conda`  
+`conda activate xxx`  
+`conda env update --file env-ids-ws23.yml --prune`  
