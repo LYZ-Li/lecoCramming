@@ -20,3 +20,7 @@ https://blog.csdn.net/solo_ws/article/details/77095901
 `conda update conda`  
 `conda activate xxx`  
 `conda env update --file env-ids-ws23.yml --prune`  
+
+
+docker 不用每次加sudo  
+https://www.cnblogs.com/jzcn/p/16591083.html
