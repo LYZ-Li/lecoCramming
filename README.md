@@ -24,3 +24,6 @@ https://blog.csdn.net/solo_ws/article/details/77095901
 
 docker 不用每次加sudo  
 https://www.cnblogs.com/jzcn/p/16591083.html
+
+Cmake的使用  
+https://www.cnblogs.com/pandamohist/p/16890474.html
