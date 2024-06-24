@@ -46,7 +46,17 @@ ssh -T git@git.....
 chmod 600 ~/.ssh/id_rsa_RWTH-ce
 sudo chown $(whoami) ~/.ssh/id_rsa_XXX
 ```
+```sh
+git config --local user.name 'username' #github账号名称
+git config --local user.email 'username@gmail.com' #github账号邮箱
+```
+```
+# 确保在本地 main 分支上
+git checkout main
 
+# 推送本地 main 分支到远端的 hiwi 分支
+git push origin main:hiwi
+```
 将一个已存在的目录转换为一个 GIT 项目并托管到 GITHUB 仓库  
 https://blog.csdn.net/solo_ws/article/details/77095901
 
