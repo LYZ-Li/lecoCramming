@@ -1,0 +1,18 @@
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        merged_list = nums1 + nums2
+        sorted_list = sorted(merged_list)
+
+        lens = len(sorted_list)
+
+        if lens%2 == 0:
+            return (sorted_list[lens//2]+sorted_list[lens//2-1])/2.0
+        else:
+            return sorted_list[lens//2]
+        
+
+
+总结一下：
+
+使用 / 运算符进行除法，结果是浮点数。
+使用 // 运算符进行除法，结果是整数，被称为地板除法，因为它总是返回不大于真除法结果的最大整数。

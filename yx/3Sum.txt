@@ -1,0 +1,58 @@
+# from itertools import combinations
+# class Solution:
+#     def threeSum(self, nums: List[int]) -> List[List[int]]:
+#         result_list = list()
+
+#         combinations_list = list(combinations(nums, 3))
+
+#         for result in combinations_list:
+#             if sum(result) == 0:
+#                 result_list.append(list(result))
+        
+#         return result_list
+
+
+# class Solution:
+#     def threeSum(self, nums: List[int]) -> List[List[int]]:
+#         arrLength = len(nums)
+
+#         ans = []
+
+
+#         for i_idx in range(0, arrLength - 2):
+#             for j_idx in range(i_idx + 1, arrLength - 1):
+#                 for k_idx in range(j_idx + 1, arrLength):
+#                     if nums[i_idx] + nums[j_idx] + nums[k_idx] == 0:
+#                         # Sort the triplet and add it to the result if not already present
+#                         triplet = sorted([nums[i_idx], nums[j_idx], nums[k_idx]])
+                        
+#                         if triplet not in ans:
+#                             ans.append(triplet)
+
+#         return ans
+
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        triplets = set()
+        for i in range(len(nums) - 2):
+            firstNum = nums[i]
+            j = i + 1
+            k = len(nums) - 1
+            while j < k:
+                secondNum  = nums[j]
+                thirdNum = nums[k]
+
+                potentialSum = firstNum + secondNum + thirdNum 
+                if potentialSum > 0:
+                    k -= 1
+                elif potentialSum < 0:
+                    j += 1
+                else:
+                    triplets.add((firstNum , secondNum ,thirdNum))
+                    j += 1
+                    k -= 1
+        return triplets
+
+
+大聪明

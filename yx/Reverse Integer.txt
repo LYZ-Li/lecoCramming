@@ -1,0 +1,35 @@
+class Solution:
+    def reverse(self, x: int) -> int:
+        list_x = list(str(x))
+        rev_x = list()
+        if list_x[0] == '-':
+            rev_x.append('-')
+            for i in range(len(list_x)-1):
+                    rev_x.append(list_x[len(list_x) - 1 - i])
+            rev_x = int(''.join(rev_x))
+
+        elif list_x[0] == 0:
+            for i in range(len(list_x)-1):
+                rev_x.append(list_x[len(list_x) -1 - i])
+            rev_x = int(''.join(rev_x))
+
+        else: 
+            rev_x = int(''.join(list_x[::-1]))
+
+        if -2**31 <= rev_x <= 2**31 - 1:
+            return rev_x
+        else:
+            return 0
+
+注意：
+仔细浏览所有条件！！！
+if list(x) = ['a'，'b','c']
+
+str(list(x)) = "[', 'a', ',', ' ', "'", 'b', "', 'c', '']"
+
+''.join(list(x)) = abc
+
+        
+
+            
+        
